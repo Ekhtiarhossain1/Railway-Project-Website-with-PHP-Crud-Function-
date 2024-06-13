@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link type="stylesheet" href="nav_bar.css">
+
+    <style>
+        * {
+            margin: 0px;
+            border: border-box;
+        }
+
+        .navbar {
+            height: 70px;
+            background-color: #6c757d;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .logo-name {
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav_logo {
+            height: 50px;
+            width: 80px;
+        }
+
+        .logo {
+            background-image: url("logo.png");
+            background-size: contain;
+            height: 50px;
+            width: 70px;
+        }
+
+        .border {
+            border: 2px solid transparent;
+        }
+
+        .border:hover {
+            border: 2px solid white;
+        }
+
+        /* *****************NAV box 2******************** */
+
+        .nav-administration {
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        #text_administration {
+            margin-left: 5px;
+        }
+
+        /* *****NAV box 3**** */
+        .nav-academy {
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        #text_academy {
+            margin-left: 5px;
+        }
+
+        /* *****NAV box 4**** */
+        .nav-library {
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        #text_library {
+            margin-left: 5px;
+        }
+
+        /* *****NAV box 5**** */
+        .nav-student-list {
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        #text_student-list {
+            margin-left: 5px;
+        }
+
+        /* *****NAV box 6**** */
+        .nav-faculty {
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        #text_faculty {
+            margin-left: 5px;
+        }
+
+        /* *****NAV box 7**** */
+        .nav-search-bar {
+            height: 40px;
+            width: 250px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #94d2bd;
+        }
+
+        .nav-search-bar:hover {
+            border: 2px solid orange;
+        }
+
+        .search-input {
+            width: 100%;
+            border: none;
+        }
+
+        .search-icon {
+            width: 50px;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar ">
+        <div class="logo-name border">
+
+            <div class="nav-logo ">
+                <div class="logo">
+                </div>
+            </div>
+
+            <div class="name-iubat">
+                <a href="index.php">Railway</a>
+            </div>
+        </div>
+
+
+        <div class="nav-academy border">
+            <i class="fa-solid fa-train"></i>
+            <a id="text_academy" href="rail_info.php">Rail Info</a>
+        </div>
+
+
+        <div class="nav-library border">
+            <i class="fa-solid fa-toolbox"></i>
+            <a id="text_library" href="admins_info.php">Admins</a>
+        </div>
+
+
+
+        <div class="nav-student-list border">
+            <i class="fa-solid fa-list-ol"></i>
+            <a href="ticket_table.php" id="text_student-list">Booking</a>
+        </div>
+
+
+
+        <div class="nav-faculty border">
+            <i class="fa-solid fa-address-card"></i>
+            <a href="passenger_table.php" id="text_faculty">Passenger</a>
+        </div>
+
+        <div class="nav-search-bar">
+
+            <select style="background-color: #fcfcfc;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;">
+                <option>All</option>
+            </select class="search-select">
+
+            <input placeholder="Search" class="search-input">
+
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+
+        </div>
+
+        <div class="nav-administration border">
+            <i class="fa-solid fa-user-tie"></i>
+            <a id="text_administration" href="#">Login</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
